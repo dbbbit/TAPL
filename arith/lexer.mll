@@ -10,7 +10,6 @@
 
 {
     exception Eof
-    open String
 }
 
 rule scan = parse
