@@ -29,8 +29,7 @@ expr:
       ZERO  { TmZero }
     | SUCC expr { TmSucc($2) }
     | PRED expr { TmPred($2) }
-    | LBRACE SUCC expr RBRACE { TmSucc($3) }
-    | LBRACE PRED expr RBRACE { TmPred($3) }
+    | LBRACE expr RBRACE { $2 }
     | IF expr THEN expr ELSE expr { TmIf($2, $4, $6) }
     | TRUE { TmTrue }
     | FALSE { TmFalse }
