@@ -23,3 +23,5 @@ setup.log
 arith/lexer.ml
 arith/parser.ml
 arith/f
+
+*.swp
